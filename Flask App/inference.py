@@ -30,7 +30,7 @@ def get_category(img_path):
     img = np.expand_dims(img, axis=0)
 
     # Load the TFLite model
-    tflite_model_file = 'D:\\Flask Testing\\modelV2.tflite'
+    tflite_model_file = 'modelV2.tflite'
     #model_js = tfjs.converters.load_keras_model('D:\\Flask Testing\\tfjs_model')
     with open(tflite_model_file, 'rb') as fid:
         tflite_model = fid.read()
@@ -52,7 +52,7 @@ def get_category(img_path):
     # Get the predicted label
     predicted_label = np.argmax(prediction)
     predicted_index = np.argmax(prediction[0])
-    class_names = read_class_names('D:\\Flask Testing\\Class_Names_New.txt')
+    class_names = read_class_names('Class_Names_New.txt')
     batik_description = batik_data[predicted_index]
 
     # Display the test image
