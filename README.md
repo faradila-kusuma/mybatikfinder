@@ -1,6 +1,6 @@
 # mybatikfinder
 
-- Machin Learning flow:
+- Machine Learning flow:
 1. Collect as many datasets as possible
 2. Perform data cleaning on the dataset, to prevent misclassification 3.
 3. Preprocessing the dataset before training. To optimise the training time
